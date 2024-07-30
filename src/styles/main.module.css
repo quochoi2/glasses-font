@@ -44,3 +44,13 @@
   border-radius: 10px;
   opacity: 0; 
 }
+
+/* Sign In */
+.customCheckbox .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #4CAF50; 
+  border-color: #4CAF50;
+}
+
+.customCheckbox .ant-checkbox-checked::after {
+  border-color: #fff;
+}

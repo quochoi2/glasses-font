@@ -35,7 +35,7 @@ export const headerLinks : { name: string, link: string, icon: string }[] = [
   },
   {
     name: "account",
-    link: "",
+    link: "/signin",
     icon: "/account.svg"
   },
   {
