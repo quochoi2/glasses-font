@@ -2,21 +2,20 @@ import { personalizedLinks } from "@/routes/personalized"
 import Image from "next/image"
 import style from '../styles/main.module.css'
 import Link from "next/link"
-import { findOutLinks } from "@/routes/findOutLinks"
 import { cn } from "@/lib/utils"
 
 interface IPersonalizedLink {
-  name: string, 
-  icon: string, 
-  href: string, 
+  name: string
+  icon: string
+  href: string
   buttonName: string 
 }
 
 interface IFindOutLink {
-  name: string, 
-  icon: string, 
-  description: string,
-  href: string, 
+  name: string
+  icon: string
+  description: string
+  href: string
   buttonName: string 
 }
 

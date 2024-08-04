@@ -26,9 +26,11 @@ const Header = () => {
     <header className="">
       <div className="flex justify-between">
         <div>
-          <Image className="object-cover max-w-[200px] max-h-[100px]" 
-            src={'/logo.svg'} width={200} height={60} alt="logo"
-          />
+          <Link href={'/'}>
+            <Image className="object-cover max-w-[200px] max-h-[100px]" 
+              src={'/logo.svg'} width={200} height={60} alt="logo"
+            />
+          </Link>
         </div>
         
         {/* Navbar */}

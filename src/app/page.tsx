@@ -17,6 +17,7 @@ import {
 import Image from "next/image"
 import { personalizedLinks } from "@/routes/personalized"
 import { findOutLinks } from "@/routes/findOutLinks"
+import { buttonShowMatch } from "@/routes/buttonShowMatch"
 
 export default function Home() {
   const buttonBackground : { name: string, link: string }[] = [
@@ -27,21 +28,6 @@ export default function Home() {
     {
       name: 'shop sunglasses',
       link: listMenuLSunglasses[0].href,
-    },
-  ]
-
-  const buttonShowMatch : { name: string, href: string }[] = [
-    {
-      name: "Transitions",
-      href: "/",
-    },
-    {
-      name: "Blue-violet light",
-      href: "/",
-    },
-    {
-      name: "Prescription sun",
-      href: "/",
     },
   ]
 
