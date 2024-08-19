@@ -55,7 +55,7 @@ const ProductNewArrival = () => {
                     height={350}
                     alt="Product"
                   />
-                  <div className="absolute bottom-[60px] left-0 right-0 transform translate-y-full opacity-100 -z-10">
+                  <div className="absolute bottom-[50px] left-0 right-0 transform translate-y-full opacity-100 -z-10">
                     <Image
                       className={`${style.productArrival} transform scale-y-[-1]`}
                       src={'/product-hide.jpg'}

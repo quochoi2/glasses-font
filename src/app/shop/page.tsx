@@ -1,4 +1,4 @@
-import CategoryListInShop from "@/components/CategoryListAndSortBy/CategoryList"
+import CategoryListInShop from "@/components/CategoryList"
 import MaxWidthWrapper from "@/components/MaxWidthWrapper"
 import { listCategory } from "@/seeds/listCategory"
 
@@ -7,7 +7,6 @@ const Shop = () => {
     <MaxWidthWrapper>
       <div className="mt-2">
         <CategoryListInShop array={listCategory} />
-        
       </div>
     </MaxWidthWrapper>
   )

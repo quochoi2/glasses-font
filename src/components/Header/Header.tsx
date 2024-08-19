@@ -11,7 +11,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel"
-import { BackTop } from 'antd'
+import { FloatButton } from 'antd'
 import Navbar from "./NavigationMenu"
 import SearchButton from "../SearchButton"
 
@@ -22,7 +22,7 @@ const Header = () => {
 
   return (  
     <header className="relative">
-      <BackTop />
+      <FloatButton.BackTop />
       <div className="flex justify-between">
         <div>
           <Link href={'/'}>

@@ -25,6 +25,7 @@
   mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
 }
 
+/* Product arrival */
 .productHide { opacity: 0; }
 .productShow { opacity: 1; }
 .onProductHide:hover .productShow { opacity: 0; }
@@ -44,6 +45,13 @@
   border-radius: 10px;
   opacity: 0; 
 }
+
+/* Product */
+.image1 { opacity: 1; }
+.image2 { opacity: 0; }
+.imageContainer:hover .image1 { opacity: 0; }
+.imageContainer:hover .image2 { opacity: 1; }
+
 
 /* Sign In */
 .customCheckbox .ant-checkbox-checked .ant-checkbox-inner {
