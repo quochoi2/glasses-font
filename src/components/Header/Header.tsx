@@ -1,21 +1,19 @@
 'use client'
+
 import { cn } from "@/lib/utils"
 import { headerLinks, saleLinks } from "@/routes/navLink"
 import Image from "next/image"
 import Link from "next/link" 
-
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel"
-
-import style from './header.module.css'
+import { BackTop } from 'antd'
 import Navbar from "./NavigationMenu"
+import SearchButton from "../SearchButton"
 
 const Header = () => {
   const plugin = React.useRef(
@@ -23,7 +21,8 @@ const Header = () => {
   )
 
   return (  
-    <header className="">
+    <header className="relative">
+      <BackTop />
       <div className="flex justify-between">
         <div>
           <Link href={'/'}>
@@ -36,15 +35,16 @@ const Header = () => {
         {/* Navbar */}
         <Navbar />
         
-        <div className="flex justify-between items-center px-5">
+        <div className="flex justify-between items-center px-5 relative">
+          <SearchButton />
           {headerLinks.map(linkObj => (
-            <Link key={linkObj.name} href={linkObj.link}
-              className={cn('mx-2', { [style.headerLink] : linkObj.name === "Search" })}
-            >
-              <Image className='max-w-[25px] max-h-[25px]'
-                src={linkObj.icon} width={25} height={25} alt={linkObj.name}
-              />
-            </Link>
+            <div key={linkObj.name} className="mx-2">
+              <Link href={linkObj.link}>
+                <Image className='max-w-[25px] max-h-[25px]'
+                  src={linkObj.icon} width={25} height={25} alt={linkObj.name}
+                />
+              </Link>
+            </div>
           ))}
         </div>
       </div>
@@ -71,5 +71,5 @@ const Header = () => {
     </header>
   )
 }
- 
+
 export default Header

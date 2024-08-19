@@ -23,11 +23,11 @@ export const navbarLinks : { name: string, link: string }[] = [
 
 // list icon link
 export const headerLinks : { name: string, link: string, icon: string }[] = [
-  {
-    name: "Search",
-    link: "",
-    icon: "/search.svg"
-  },
+  // {
+  //   name: "Search",
+  //   link: "",
+  //   icon: "/search.svg"
+  // },
   {
     name: "favorite",
     link: "",
